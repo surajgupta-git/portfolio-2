@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -84,6 +85,7 @@ p {
 	z-index: 1000;
 	left: 0;
 	top: 0;
+
 	width: 100vw;
 	height: auto;
 }
@@ -222,7 +224,7 @@ p {
 	height: 100%;
 	width: 100%;
 	background-color: black;
-	opacity: 0.7;
+	opacity: 0.4;
 	z-index: -1;
 }
 #hero .hero {
@@ -277,12 +279,17 @@ p {
 	height: 50px;
 }
 
+#exp .exp-container{
+	height:200px;
+	margin:5% 10%;
+}
+
 /* Projects section */
 #projects .projects {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 100px 0;
+	padding: 50px 0;
 }
 #projects .projects-header h1 {
 	margin-bottom: 50px;
@@ -299,6 +306,7 @@ p {
 	justify-content: center;
 	flex-direction: column;
 	width: 80%;
+	height: 30px;
 	margin: 20px auto;
 	overflow: hidden;
 	border-radius: 10px;
@@ -356,8 +364,8 @@ p {
 	flex-direction: column-reverse;
 	text-align: center;
 	max-width: 1200px;
-	margin: 0 auto;
-	padding: 100px 20px;
+	margin: 5px 10px;
+	padding: 50px 20px;
 }
 #about .col-left {
 	width: 250px;
@@ -549,7 +557,7 @@ p {
 		flex-direction: row-reverse;
 	}
 	#projects .project-item {
-		height: 400px;
+		height: 300px;
 		margin: 0;
 		width: 100%;
 		border-radius: 0;
@@ -672,7 +680,12 @@ p {
             <div class="bar"></div>
           </div>
           <ul>
-            <li><a href="https://github.com/surajgupta-git" target="_blank">My GitHub</a></li>
+			<li class="social-item">
+				<a href="https://www.linkedin.com/in/surajguptagudla/" target="_blank"><img src="https://img.icons8.com/doodle/48/000000/linkedin--v2.png" /></a>
+			</li>
+			<li class="social-item">
+				<a href="https://github.com/surajgupta-git" target="_blank"><img src="https://img.icons8.com/doodle/48/000000/github--v1.png"/></a>
+			</li>
             <li><a href="#exp" data-after="exp">Experience</a></li>
             <li><a href="#projects" data-after="Projects">Projects</a></li>
             <li><a href="#about" data-after="About">About</a></li>
@@ -721,7 +734,7 @@ p {
 
     <!-- Experience summary Section -->
     <section id="exp">
-      <div class="exp container">
+      <div class="exp-container">
         <div class="col-center">
           <h1 class="section-title">Experience <span>Summary</span></h1>
           <br>
