@@ -21,7 +21,7 @@ a {
 	text-decoration: none;
 }
 .container {
-	min-height: 100vh;
+	min-height: 70vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -207,6 +207,50 @@ p {
 }
 /* End Header section */
 
+/* exp section*/
+#exp .exp {
+	max-width: 1300px;
+	margin: 10px 20px;
+	padding: 50px 20px;
+}
+#exp .col-left {
+	width: 250px;
+	height: 150px;
+}
+#exp .col-right {
+	width: 60%;
+}
+#exp .col-right h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	margin-bottom: 10px;
+}
+#exp .col-right p {
+	margin-bottom: 30px;
+}
+#exp .col-right .cta {
+	color: black;
+	margin-bottom: 20px;
+	padding: 10px 20px;
+	font-size: 2rem;
+}
+#exp .col-left .exp-img {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border: 10px solid white;
+}
+#exp .col-left .exp-img::after {
+	content: '';
+	position: absolute;
+	left: -33px;
+	top: 19px;
+	height: 98%;
+	width: 98%;
+	border: 7px solid crimson;
+	z-index: -1;
+}
 
 /* Hero Section */
 #hero {
@@ -274,15 +318,7 @@ p {
 
 /* End Hero Section */
 
-#exp .col-center {
-	width: 1000px;
-	height: 50px;
-}
 
-#exp .exp-container{
-	height:200px;
-	margin:5% 10%;
-}
 
 /* Projects section */
 #projects .projects {
@@ -737,10 +773,14 @@ p {
 
     <!-- Experience summary Section -->
     <section id="exp">
-      <div class="exp-container">
-        <div class="col-center">
-          <h1 class="section-title">Experience <span>Summary</span></h1>
-          <br>
+		<div class="exp container">
+		  <div class="col-left">
+			<div class="exp-img">
+			  <img src="./work.jpg" alt="img">
+			</div>
+		  </div>
+		  <div class="col-right">
+			<h1 class="section-title">Experience <span>Summary</span></h1>
           <p>
             Delivered several ATM SW security enhancement features and applications using C# .NET under anticipated target timelines. 
             <br>
@@ -750,7 +790,7 @@ p {
             <br>
             Reduced security risks, Bugs & memory leaks by performing frequent code analysis with Coverity.
 			<br>
-			Developed Automation scripts for the manual test suites and reduced man-hours by 50% for the testing team.
+			Developed Automation scripts for the manual test suites and reduced man-hours by 50% for the testing team. <br>
           </p>
         </div>
       </div>

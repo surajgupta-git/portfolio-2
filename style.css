@@ -13,7 +13,7 @@ a {
 	text-decoration: none;
 }
 .container {
-	min-height: 100vh;
+	min-height: 50vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -265,6 +265,13 @@ p {
 
 /* End Hero Section */
 
+#exp .exp {
+	flex-direction: column-reverse;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px 20px;
+}
 #exp .col-center {
 	width: 1000px;
 	height: 50px;
@@ -272,10 +279,11 @@ p {
 
 /* Projects section */
 #projects .projects {
-	flex-direction: column;
+	flex-direction: column-reverse;
+	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 100px 0;
+	padding: 100px 20px;
 }
 #projects .projects-header h1 {
 	margin-bottom: 50px;
@@ -350,7 +358,7 @@ p {
 	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 100px 20px;
+	padding: 50px 20px;
 }
 #about .col-left {
 	width: 250px;
