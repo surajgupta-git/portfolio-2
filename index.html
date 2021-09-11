@@ -252,6 +252,53 @@ p {
 	z-index: -1;
 }
 
+/* skills section*/
+#skills .skills {
+	max-width: 1300px;
+	margin: 10px 20px;
+	padding: 50px 20px;
+}
+#skills .col-left {
+	width: 250px;
+	height: 150px;
+}
+#skills .col-right {
+	width: 60%;
+}
+#skills .col-right h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	margin-bottom: 10px;
+}
+#skills .col-right p {
+	margin-bottom: 30px;
+}
+#skills .col-right .cta {
+	color: black;
+	margin-bottom: 20px;
+	padding: 10px 20px;
+	font-size: 2rem;
+}
+#skills .col-left .skills-img {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border: 10px solid white;
+}
+#skills .col-left .skills-img::after {
+	content: '';
+	position: absolute;
+	left: -33px;
+	top: 19px;
+	height: 98%;
+	width: 98%;
+	border: 7px solid crimson;
+	z-index: -1;
+}
+
+
+
 /* Hero Section */
 #hero {
 	background-image: url(./hero-bng.jpg);
@@ -442,6 +489,44 @@ p {
 	z-index: -1;
 }
 /* End About Section */
+
+/* skills Section 
+#skills .skills {
+	flex-direction: column-reverse;
+	text-align: center;
+	max-width: 1200px;
+	margin: 5px 10px;
+	padding: 50px 20px;
+}
+#skills .col-left {
+	width: 250px;
+	height: 150px;
+}
+#skills .col-right {
+	width: 100%;
+}
+#skills .col-right h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	margin-bottom: 10px;
+}
+#skills .col-right p {
+	margin-bottom: 20px;
+}
+#skills .col-right .cta {
+	color: black;
+	margin-bottom: 10px;
+	padding: 10px 20px;
+	font-size: 2rem;
+}
+#skills .col-left {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border: 10px solid white;
+}
+ End skills Section */
 
 /* contact Section */
 #contact .contact {
@@ -723,6 +808,7 @@ p {
 				<a href="https://github.com/surajgupta-git" target="_blank"><img src="https://img.icons8.com/doodle/48/000000/github--v1.png"/></a>
 			</li>
             <li><a href="#exp" data-after="exp">Experience</a></li>
+			<li><a href="#skills" data-after="skills">Skills</a></li>
             <li><a href="#projects" data-after="Projects">Projects</a></li>
             <li><a href="#about" data-after="About">About</a></li>
             <li><a href="#contact" data-after="Contact">Contact</a></li>
@@ -739,7 +825,7 @@ p {
     <div class="hero container">
       <div>
         <h1>Hello, <span></span></h1>
-        <h1>I am<span></span></h1>
+        <h1>I am <span></span></h1>
         <h1>Suraj <span></span></h1>
         <a href="#projects" type="button" class="cta">Portfolio</a>
       </div>
@@ -756,18 +842,23 @@ p {
           </div>
         </div>
         <div class="col-right">
-          <h1 class="section-title">About <span>me</span></h1>
-          <p> ✨Detail-Oriented👀, responsible, and committed engineer. <br/>
-❤️ Passionate about developing solutions to everyday problems that are life in the market make an impact. <br/>
-🌟I believe in a continuous learning process to keep myself dynamic, visionary, and competitive with the changing scenario of the world. I love to explore different domains of computer science. <br/>
+          <h1 class="section-title">Who <span>Am I ?</span></h1>
 
-I am Currently Pursuing my Master's in computer science at Indiana University Bloomington '22.👨‍🎓 <br/>
-
-I am a Software Engineer👩‍💻 with 2+ years of professional experience committed to building intuitive high-quality solutions on time by collaborating across multiple teams and using a variety of technologies and programming languages. <br/>
-Got involved in different phases of the software development from analysis, development, testing, deployment to software release, maintenance, documentation, customer support & troubleshooting. <br/>
-
-Actively seeking👀 Full-time & internship opportunities in the fields of SW Development, full-stack web dev, and Machine learning starting May 2022. <br/>
-</p>
+          <p>
+			I am an aspiring software Enginner with around 3 years of experience in Application development. I am passionate about developing software solutions to real-time problems and challenges that go live in the market and make a positive impact on people. 
+			<br>
+			I believe in a continuous learning process to keep myself dynamic, visionary, and competitive with the changing scenario of the world. I love to explore different domains of computer science.
+            <br>
+			I enjoy working with cross-functional teams and communications ideas and results with them. I am an excellent team player and I strongly believe knowledge sharing is an ultimate way to increase productivity.
+			<br>
+			-- Masters student in Computer Scienct at Indiana University, Bloomington.
+			<br>
+            -- Bachelors degree in Computer Engineering from Osmania University, India.
+			<br>
+            -- Ex-Software Engineer at NCR Corporation.
+			<br>
+			Actively seeking internship and full time opportunities in my areas of interests starting May 2022. 
+			<br></p>
           <a href="./Resume.pdf" target="_blank type="button" class="cta">View Resume</a>
         </div>
       </div>
@@ -785,18 +876,62 @@ Actively seeking👀 Full-time & internship opportunities in the fields of SW De
 		  <div class="col-right">
 			<h1 class="section-title">Experience <span>Summary</span></h1>
           <p>
-            -- Worked with multiple teams and delivered several ATM Software Security enhancement features and applications such as Remote OS hardening, locked-down accounts, disk encryption and BIOS level security using C# .NET (core) and a variety of scripting technologies under anticipated target timelines. <br/>
-	    -- Reduced the man-hours by 70% for the testing team and improved the customer experience by automating the testing suites, configuration and deployment process using AutoIT V3 automation scripts. <br/>
-	    -- Performed code Migration from AutoIT scripts to C# .Net to improve code integrity and functionality.<br/>
-	    -- Administered the windows server & the SQL server management studio and Microsoft active directory (ADDS) for the projects undertaken. <br/>
-	    -- Debugged potential issues in production and development to mitigate the effect and addressed the issues with a turnaround time of 1-2 days. Reduced and resolved security risks, bugs, code smells & memory leaks by performing frequent code analysis with Coverity and SonarQube. <br/>
-	    -- Coordinated in different phases of the product delivery (Analysis, Development, Testing (TDD), Version control, Deployment, Maintenance, Documentation, Customer Support & Troubleshooting ) under Agile software development lifecycle. <br/>
- <br>
+            -- Worked with multiple teams and delivered several ATM Software Security enhancement features and applications such as Remote OS hardening, locked-down accounts, disk encryption and BIOS level security using C# .NET (core) and a variety of scripting technologies under anticipated target timelines. 
+            <br>
+            -- Coordinated in different phases of the product delivery (Analysis, Development, Testing (TDD), Version control, Deployment, Maintenance, Documentation, Customer Support & Troubleshooting ) under Agile software development lifecycle.
+            <br>
+            -- Debugged potential issues in production and development to mitigate the effect and addressed the issues with a turnaround time of 1-2 days. Reduced and resolved security risks, bugs, code smells & memory leaks by performing frequent code analysis with Coverity and SonarQube.
+            <br>
+            -- Reduced the man-hours by 70% for the testing team and improved the customer experience by automating the testing suites, configuration and deployment process using AutoIT V3 automation scripts.
+			<br>
+			-- Performed code Migration from AutoIT scripts to C# .Net to improve code integrity and functionality.
+			<br>
+			-- Administered the windows server & the SQL server management studio and Microsoft active directory (ADDS) for the projects undertaken.
+			<br>
           </p>
         </div>
       </div>
     </section>
     <!-- End Experience Summary Section -->
+
+	<!-- Experience summary Section -->
+    <section id="skills">
+		<div class="skills container">
+		  <div class="col-left">
+			<div class="skills-img">
+			  <img src="./skillpic.jpg" alt="img">
+			</div>
+		  </div>
+		  <div class="col-right">
+			<h1 class="section-title">My <span>Skills</span></h1>
+          <p>
+			  <h2 style='color:crimson'>Programming & Scripting Languages:</h2>
+			  <h2>C++, C# .Net(core), Java, Python, AutoIT, Batch, Power Shell</h2>
+			  <br>
+			  <h2 style='color:crimson' >Web Technologies:</h2>
+			  <h2>HTML, CSS, SQL, React, Redux, Node, Flask, JSON, XML, jQuery, REST</h2>
+			  <br>
+			  <h2 style='color:crimson'>Databases:</h2>
+			  <h2>SQL server, MySQL, PostgreSQL, MongoDB</h2>
+			  <br>
+			  <h2 style='color:crimson'>Data Science Libraries:</h2>
+			<h2>NumPy, Pandas, matplotlib, scikit-learn, TensorFlow, PyTorch, Selenium, Beautiful Soup</h2>
+			<br>
+			<h2 style='color:crimson'>DevOps:</h2>
+			<h2>Docker, Kubernetes, Jenkins, GIT, Kafka, JMeter, VMware, JetStream</h2>
+			<br>
+			<h2 style='color:crimson'>Cloud:</h2>
+			<h2>AWS (EC2, S3, RDS, DynamoDB, IAM, VPC), GCP</h2>
+			<br>
+			<h2 style='color:crimson'>Other:</h2>
+			<h2> Jira, Confluence, Crucible, Zephyr, WiX, SonarQube, Coverity, Visual Studio, VS Code, Postman</h2>
+			<br>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Experience Summary Section -->
+
 
 
   <!-- Projects Section -->
@@ -809,9 +944,9 @@ Actively seeking👀 Full-time & internship opportunities in the fields of SW De
         <div class="project-item">
           <div class="project-info">
             <h1>PixelGram</h1>
-            <p>[React JS, Node JS, Python, Docker, Jenkins, Kubernetes, Kafka, JMeter, SQLite DB, GIT]</p>
+            <p>[React, Node, Flask, Docker, Jenkins, Kubernetes, Kafka, JMeter, SQLite]</p>
             <br>
-            <p>Designed and developed a  fault-tolerant distributed systems based web application with high availability & scalability which can be used to share, upload, download and organize photos employing the Micro-Services Architectural pattern. Built a CI/CD pipeline using Jenkins to deploy the containerized microservices on a Kubernetes cluster running on a cloud VM instance setup on Jetstream. Leveraged GIT effectively for the source code and project management.</p>
+            <p>Designed and developed a highly scalable fault tolerant distributed systems based web Application to share, upload, download and organise photos employing the Micro-Services Architectural pattern. Built a CI/CD pipeline USING Jenkins to deploy the containerized microservices on a Kubernetes cluster running on a Jetstream instance.</p>
           </div>
           <div class="project-img">
             <img src="./img-1.png" alt="img">
@@ -823,7 +958,7 @@ Actively seeking👀 Full-time & internship opportunities in the fields of SW De
             <h1>Home Automation System </h1>
 			<br>
 			<p>Domain: Embedded Systems & IoT </p>
-            <p> Designed and developed an IoT system to control all the home Appliances remotely. Used Mosquito MQTT as the messaging broker between the NodeMCU and the cloud. Developed an interactive control dashboard UI using WebSocket, Eclipse Paho JS library, CSS and jQuery and hosted using google firebase. </p>
+            <p>Designed and developed a system to control all the home Appliances remotely. Used Mosquito MQTT as the messaging broker between the NodeMCU and the cloud. Developed the control dashboard using vanilla JS, HTML & CSS.</p>
           </div>
           <div class="project-img">
             <img src="./img-1.png" alt="img">
@@ -833,7 +968,7 @@ Actively seeking👀 Full-time & internship opportunities in the fields of SW De
 		<div class="project-item">
 			<div class="project-info">
 		<h1> <a href="https://gsgresto-ae2fd.web.app/" > Restaurant Management System </a>  </h1>
-            <p>Developed a static front-end restaurant management website using express JS for the routing and React JS for the functionality and appearance, hosted the application into web using Google Firebase.</p>
+            <p>Developed a static front-end restaurant management website using express JS for the routing and React JS for the functionality and appearance, hosted the application into web using Google Firebase</p>
           </div>
           <div class="project-img">
             <img src="./img-1.png" alt="img">
@@ -842,22 +977,8 @@ Actively seeking👀 Full-time & internship opportunities in the fields of SW De
 
         <div class="project-item">
           <div class="project-info">
-            <h1>Toxic Speech Classifier</h1>
-			<p>  [NLTK, HTML, CCS, Flask, Matplotlib] </p>
-			<br/>
-            <p>Developed a Machine learning based web application that can classify user provided speech into various toxic categories like Normal, Toxic, Obscene, Threat, Insult, Hate using the Natural language Toolkit(NLTK) library in python, HTML & CSS for the front end and Python Flask as the backend framework. </p>
-          </div>
-          <div class="project-img">
-            <img src="./img-1.png" alt="img">
-          </div>
-        </div>
-		
-		<div class="project-item">
-          <div class="project-info">
-            <h1>Employee Skill Tracker</h1>
-			<p>  [NCR Global Hackathon '19] </p>
-			<br/>
-            <p>Developed a full-stack web application prototype that can be leveraged as skill repository of all employees in a company using Spring Boot, MySQL DB and JPA for the backend API, React JS for the frontend along with Axios library for the http requests. </p>
+            <h1>Movie Recommender System </h1>
+            <p>A python application that recommends movies to a user based on his watching history and interests. Achieved an accuracy of 94.7%. </p>
           </div>
           <div class="project-img">
             <img src="./img-1.png" alt="img">
@@ -866,8 +987,8 @@ Actively seeking👀 Full-time & internship opportunities in the fields of SW De
 
         <div class="project-item">
           <div class="project-info">
-            <h1>Movie Store </h1>
-            <p>Developed a MERN stack web application that displays the latest collection of movies and related information wherein the authenticated users can like a movie, mark their favourites and post reviews. Deployed on an AWS EC2 instance with NGINX as the frontend web server and node as the backend server along with a cloud Mongo DB cluster to store the movie data.</p>
+            <h1>Customer Banking portal </h1>
+            <p>An windows application to manage Bank account information developed using ADO .Net, MS SQL and windows forms.</p>
           </div>
           <div class="project-img">
             <img src="./img-1.png" alt="img">
